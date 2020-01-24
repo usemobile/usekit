@@ -17,6 +17,4 @@ class CnpjFormatter extends BaseFormatter {
   }
 }
 
-const cnpjFormatter = new CnpjFormatter();
-
-export default cnpjFormatter;
+export default new CnpjFormatter();

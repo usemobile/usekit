@@ -17,6 +17,4 @@ class CpfFormatter extends BaseFormatter {
   }
 }
 
-const cpfFormatter = new CpfFormatter();
-
-export default cpfFormatter;
+export default new CpfFormatter();

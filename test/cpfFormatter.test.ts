@@ -1,8 +1,8 @@
 import test from 'ava';
 import { cpfFormatter } from '../src/usekit';
 
-const VALID_FORMATTED_CPF = '123.123.123-12';
-const VALID_UNFORMATTED_CPF = '12312312312';
+const VALID_FORMATTED_CPF = '000.000.000-00';
+const VALID_UNFORMATTED_CPF = '00000000000';
 const INVALID_FORMAT_CPF = '0000';
 
 test('should format CPF', (context) => {
