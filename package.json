@@ -1,0 +1,53 @@
+{
+  "name": "usekit",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "description": "Validators, formatters and other value objects for brazillians",
+  "scripts": {
+    "pretest": "yarn build",
+    "test": "ava",
+    "build": "bili",
+    "prepublishOnly": "yarn test"
+  },
+  "files": [
+    "dist/",
+    "types/"
+  ],
+  "author": {
+    "name": "Highlander Paiva",
+    "url": "https://hvpaiva.github.io/"
+  },
+  "keywords": [
+    "validators",
+    "brazilian",
+    "formatters",
+    "RG",
+    "CPF",
+    "CNPJ",
+    "real",
+    "BRL"
+  ],
+  "license": "MIT",
+  "cdn": "dist/usekit.umd.js",
+  "main": "dist/usekit.js",
+  "types": "types/usekit.d.ts",
+  "unpkg": "dist/usekit.umd.js",
+  "module": "dist/usekit.esm.js",
+  "jsdelivr": "dist/usekit.umd.js",
+  "umd:main": "dist/usekit.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usemobile/usekit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usemobile/usekit/issues"
+  },
+  "homepage": "https://github.com/usemobile/usekit#readme",
+  "devDependencies": {
+    "ava": "^3.0.0",
+    "bili": "^4.8.1",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
