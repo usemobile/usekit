@@ -5,7 +5,8 @@
   "description": "Validators, formatters and other value objects for brazillians",
   "scripts": {
     "pretest": "yarn build",
-    "test": "ava",
+    "test": "nyc ava",
+    "test:watch": "ava --watch",
     "build": "bili",
     "prepublishOnly": "yarn test"
   },
@@ -46,9 +47,10 @@
   "devDependencies": {
     "ava": "^3.0.0",
     "bili": "^4.8.1",
+    "nyc": "^15.0.0",
     "rollup-plugin-typescript2": "^0.25.3",
+    "serialize-javascript": "2.1.2",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5",
-    "serialize-javascript": "2.1.2"
+    "typescript": "^3.7.5"
   }
 }

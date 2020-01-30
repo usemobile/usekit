@@ -11,3 +11,5 @@ node_modules/
 # Generated sources & type definitions.
 dist/
 types/
+.nyc_output/
+coverage/
