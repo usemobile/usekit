@@ -1,1 +1,2 @@
-export { default as CpfValidator } from './cpfValidator';
+export { default as CpfValidator } from './CpfValidator';
+export { default as CnpjValidator } from './CnpjValidator';
