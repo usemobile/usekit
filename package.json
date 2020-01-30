@@ -1,6 +1,6 @@
 {
   "name": "usekit",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "sideEffects": false,
   "description": "Validators, formatters and other value objects for brazillians",
   "scripts": {
@@ -28,6 +28,11 @@
     "real",
     "BRL"
   ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "license": "MIT",
   "cdn": "dist/usekit.umd.js",
   "main": "dist/usekit.js",
@@ -45,8 +50,11 @@
   },
   "homepage": "https://github.com/usemobile/usekit#readme",
   "devDependencies": {
-    "ava": "^3.0.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "ava": "^3.1.0",
     "bili": "^4.8.1",
+    "husky": "^4.2.1",
     "nyc": "^15.0.0",
     "rollup-plugin-typescript2": "^0.25.3",
     "serialize-javascript": "2.1.2",
