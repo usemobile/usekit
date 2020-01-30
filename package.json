@@ -57,6 +57,7 @@
     "bili": "^4.8.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
+    "cz-conventional-changelog-emoji": "^0.1.0",
     "husky": "^4.2.1",
     "nyc": "^15.0.0",
     "rollup-plugin-typescript2": "^0.25.3",
@@ -66,7 +67,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog-emoji"
     }
   }
 }
