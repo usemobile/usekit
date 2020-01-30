@@ -1,6 +1,6 @@
 {
   "name": "usekit",
-  "version": "1.0.0-alpha.1",
+  "version": "0.0.0-development",
   "sideEffects": false,
   "description": "Validators, formatters and other value objects for brazillians",
   "scripts": {
@@ -8,7 +8,8 @@
     "test": "nyc ava",
     "test:watch": "ava --watch",
     "build": "bili",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn test",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist/",
@@ -44,7 +45,7 @@
   "umd:main": "dist/usekit.umd.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/usemobile/usekit.git"
+    "url": "https://github.com/usemobile/usekit.git"
   },
   "bugs": {
     "url": "https://github.com/usemobile/usekit/issues"
@@ -63,7 +64,8 @@
     "rollup-plugin-typescript2": "^0.25.3",
     "serialize-javascript": "2.1.2",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "semantic-release": "^17.0.1"
   },
   "config": {
     "commitizen": {
