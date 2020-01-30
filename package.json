@@ -1,5 +1,5 @@
 {
-  "name": "usekit",
+  "name": "@usemobile_br/usekit",
   "version": "0.0.0-development",
   "sideEffects": false,
   "description": "Validators, formatters and other value objects for brazillians",
@@ -10,6 +10,9 @@
     "build": "bili",
     "prepublishOnly": "yarn test",
     "semantic-release": "HUSKY_SKIP_HOOKS=1 semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist/",
