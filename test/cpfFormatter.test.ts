@@ -1,9 +1,11 @@
 import test from 'ava';
-import { cpfFormatter } from '../src/usekit';
+import { CpfFormatter } from '../src/usekit';
 
 const VALID_FORMATTED_CPF = '000.000.000-00';
 const VALID_UNFORMATTED_CPF = '00000000000';
 const INVALID_FORMAT_CPF = '0000';
+
+const cpfFormatter = new CpfFormatter();
 
 test('should format CPF', (context) => {
   context.is(cpfFormatter.format(VALID_UNFORMATTED_CPF), VALID_FORMATTED_CPF);

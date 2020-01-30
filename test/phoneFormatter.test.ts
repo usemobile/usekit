@@ -1,9 +1,11 @@
 import test from 'ava';
-import { phoneFormatter } from '../src/usekit';
+import { PhoneFormatter } from '../src/usekit';
 
 const VALID_FORMATTED_PHONE = '(00) 0 0000-0000';
 const VALID_UNFORMATTED_PHONE = '00000000000';
 const INVALID_FORMAT_PHONE = '0000';
+
+const phoneFormatter = new PhoneFormatter();
 
 test('should format PHONE', (context) => {
   context.is(phoneFormatter.format(VALID_UNFORMATTED_PHONE), VALID_FORMATTED_PHONE);

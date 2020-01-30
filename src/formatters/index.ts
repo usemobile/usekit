@@ -1,4 +1,5 @@
-export { default as cpfFormatter } from './cpfFormatter';
-export { default as cnpjFormatter } from './cnpjFormatter';
-export { default as phoneFormatter } from './phoneFormatter';
-export { default as cepFormatter } from './cepFormatter';
+export { default as CpfFormatter } from './CpfFormatter';
+export { default as CnpjFormatter } from './CnpjFormatter';
+export { default as PhoneFormatter } from './PhoneFormatter';
+export { default as CepFormatter } from './CepFormatter';
+export { default as BaseFormatter } from './BaseFormatter';

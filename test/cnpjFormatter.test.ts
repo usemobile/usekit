@@ -1,9 +1,11 @@
 import test from 'ava';
-import { cnpjFormatter } from '../src/usekit';
+import { CnpjFormatter } from '../src/usekit';
 
 const VALID_FORMATTED_CNPJ = '00.000.000/0000-00';
 const VALID_UNFORMATTED_CNPJ = '00000000000000';
 const INVALID_FORMAT_CNPJ = '0000';
+
+const cnpjFormatter = new CnpjFormatter();
 
 test('should format CNPJ', (context) => {
   context.is(cnpjFormatter.format(VALID_UNFORMATTED_CNPJ), VALID_FORMATTED_CNPJ);

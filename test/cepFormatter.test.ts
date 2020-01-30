@@ -1,9 +1,11 @@
 import test from 'ava';
-import { cepFormatter } from '../src/usekit';
+import { CepFormatter } from '../src/usekit';
 
 const VALID_FORMATTED_CEP = '00000-000';
 const VALID_UNFORMATTED_CEP = '00000000';
 const INVALID_FORMAT_CEP = '0000';
+
+const cepFormatter = new CepFormatter();
 
 test('should format CEP', (context) => {
   context.is(cepFormatter.format(VALID_UNFORMATTED_CEP), VALID_FORMATTED_CEP);
