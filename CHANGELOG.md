@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/usemobile/usekit/compare/v1.0.0...v1.1.0) (2020-01-30)
+
+
+### Features
+
+* **validators:** creating CEP validator ([40cb679](https://github.com/usemobile/usekit/commit/40cb679ec32d41fedf9bedc7c5a2bd9ad9fd264e))
+
 # 1.0.0 (2020-01-30)
 
 
