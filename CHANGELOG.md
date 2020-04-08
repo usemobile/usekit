@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/usemobile/usekit/compare/v1.3.0...v2.0.0) (2020-04-08)
+
+
+### Code Refactoring
+
+* updating decorators to new validators form ([c5112e0](https://github.com/usemobile/usekit/commit/c5112e00ee2abb5be533e441e0121299a80c406c))
+
+
+### BREAKING CHANGES
+
+* change validation method 'isValid' to 'validate'. Is valid will be removed soon
+
 # [1.3.0](https://github.com/usemobile/usekit/compare/v1.2.0...v1.3.0) (2020-04-08)
 
 
