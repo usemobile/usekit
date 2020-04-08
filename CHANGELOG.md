@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/usemobile/usekit/compare/v1.1.0...v1.2.0) (2020-04-08)
+
+
+### Features
+
+* inss value object ([8afaa08](https://github.com/usemobile/usekit/commit/8afaa08a01b4cc418daea21f0c1d804652f82a07))
+
 # [1.1.0](https://github.com/usemobile/usekit/compare/v1.0.0...v1.1.0) (2020-01-30)
 
 
