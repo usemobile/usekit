@@ -1,11 +1,13 @@
 import { Validator } from './Validator';
 import { CnpjFormatter } from '../formatters';
 import Utils from '../utils';
+import {ValidatorConstraint, ValidatorConstraintInterface, ValidationArguments} from "class-validator";
 
 /**
  * The CNPJ validator.
  */
-class CnpjValidator implements Validator {
+@ValidatorConstraint({ name: "cnpj", async: false })
+class CnpjValidator implements Validator, ValidatorConstraintInterface {
 
   /**
    * Validator array for CNPJ.
@@ -17,6 +19,39 @@ class CnpjValidator implements Validator {
   constructor() {
     this.utils = new Utils();
     this.cnpjFormatter = new CnpjFormatter();
+  }
+
+  /**
+   * Check if value is a valid CNPJ.
+   * @example ```js
+   * CnpjValidator.validate('366.418.768-70');
+   * //=> true
+   *
+   * CnpjValidator.validate('36641876870');
+   * //=> true
+   *
+   * CnpjValidator.validate('213.198.013-20');
+   * //=> false
+   *
+   * CnpjValidator.validate('2131201872781');
+   * //=> false
+   *
+   * CnpjValidator.validate('11111111111');
+   * //=> false
+   * ```
+   * @param value A `string` with CNPJ numbers. Can be formatted or unformatted.
+   * @param validationArguments The <ValidationArguments> object
+   */
+  validate(value: any, validationArguments?: ValidationArguments): boolean {
+    return this.isValid(value);
+  }
+
+  /**
+   * The default validation error message
+   * @param args Validation arguments
+   */
+  defaultMessage(args: ValidationArguments): string {
+    return "The ($property) property with ($value) value is invalid!";
   }
 
   /**
@@ -38,6 +73,7 @@ class CnpjValidator implements Validator {
  * //=> false
  * ```
  * @param value A `string` with CNPJ numbers. Can be formatted or unformatted.
+ * @deprecated Use 'validate' instead.
  */
   isValid(value: string) {
     if (!this.cnpjFormatter.isFormattable(value)) return false;
