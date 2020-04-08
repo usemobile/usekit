@@ -9,11 +9,7 @@ export default function IsCep(validationOptions?: ValidationOptions) {
             propertyName: propertyName,
             constraints: [],
             options: validationOptions,
-            validator: {
-                validate(value: any, args: ValidationArguments) {
-                  return new CepValidator().isValid(value);
-                }
-            }
+            validator: CepValidator
         });
    };
 }

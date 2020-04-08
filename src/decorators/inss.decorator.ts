@@ -9,11 +9,7 @@ export default function IsInss(validationOptions?: ValidationOptions) {
             propertyName: propertyName,
             constraints: [],
             options: validationOptions,
-            validator: {
-                validate(value: any, args: ValidationArguments) {
-                  return new InssValidator().isValid(value);
-                }
-            }
+            validator: InssValidator
         });
    };
 }

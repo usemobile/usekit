@@ -33,7 +33,7 @@ class CepValidator implements Validator, ValidatorConstraintInterface {
   * @param validationArguments The <ValidationArguments> object
   */
   validate(value: any, validationArguments?: ValidationArguments): boolean {
-    return this.cepFormatter.isFormattable(value);
+    return this.isValid(value);
   }
 
   /**

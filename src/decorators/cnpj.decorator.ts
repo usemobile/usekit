@@ -9,11 +9,7 @@ export default function IsCnpj(validationOptions?: ValidationOptions) {
             propertyName: propertyName,
             constraints: [],
             options: validationOptions,
-            validator: {
-                validate(value: any, args: ValidationArguments) {
-                  return new CnpjValidator().isValid(value);
-                }
-            }
+            validator: CnpjValidator
         });
    };
 }

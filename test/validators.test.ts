@@ -26,29 +26,29 @@ const VALID_UNFORMATTED_INSS = '111111111111';
 const INVALID_FORMAT_INSS = '0000';
 
 test('should validate an CPF', context => {
-  context.true(cpfValidator.isValid(VALID_UNFORMATTED_CPF));
-  context.true(cpfValidator.isValid(VALID_FORMATTED_CPF));
-  context.false(cpfValidator.isValid(INVALID_FORMAT_CPF));
-  context.false(cpfValidator.isValid(INVALID_FORMATTED_CPF));
-  context.false(cpfValidator.isValid(INVALID_UNFORMATTED_CPF));
+  context.true(cpfValidator.validate(VALID_UNFORMATTED_CPF));
+  context.true(cpfValidator.validate(VALID_FORMATTED_CPF));
+  context.false(cpfValidator.validate(INVALID_FORMAT_CPF));
+  context.false(cpfValidator.validate(INVALID_FORMATTED_CPF));
+  context.false(cpfValidator.validate(INVALID_UNFORMATTED_CPF));
 });
 
 test('should validate an CNPJ', context => {
-  context.true(cnpjValidator.isValid(VALID_UNFORMATTED_CNPJ));
-  context.true(cnpjValidator.isValid(VALID_FORMATTED_CNPJ));
-  context.false(cnpjValidator.isValid(INVALID_FORMAT_CNPJ));
-  context.false(cnpjValidator.isValid(INVALID_FORMATTED_CNPJ));
-  context.false(cnpjValidator.isValid(INVALID_UNFORMATTED_CNPJ));
+  context.true(cnpjValidator.validate(VALID_UNFORMATTED_CNPJ));
+  context.true(cnpjValidator.validate(VALID_FORMATTED_CNPJ));
+  context.false(cnpjValidator.validate(INVALID_FORMAT_CNPJ));
+  context.false(cnpjValidator.validate(INVALID_FORMATTED_CNPJ));
+  context.false(cnpjValidator.validate(INVALID_UNFORMATTED_CNPJ));
 });
 
 test('should validate an CEP', context => {
-  context.true(cepValidator.isValid(VALID_UNFORMATTED_CEP));
-  context.true(cepValidator.isValid(VALID_FORMATTED_CEP));
-  context.false(cepValidator.isValid(INVALID_FORMAT_CEP));
+  context.true(cepValidator.validate(VALID_UNFORMATTED_CEP));
+  context.true(cepValidator.validate(VALID_FORMATTED_CEP));
+  context.false(cepValidator.validate(INVALID_FORMAT_CEP));
 });
 
 test('should validate an INSS', context => {
-  context.true(inssValidator.isValid(VALID_UNFORMATTED_INSS));
-  context.true(inssValidator.isValid(VALID_FORMATTED_INSS));
-  context.false(inssValidator.isValid(INVALID_FORMAT_INSS));
+  context.true(inssValidator.validate(VALID_UNFORMATTED_INSS));
+  context.true(inssValidator.validate(VALID_FORMATTED_INSS));
+  context.false(inssValidator.validate(INVALID_FORMAT_INSS));
 });

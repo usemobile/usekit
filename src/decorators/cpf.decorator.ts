@@ -9,11 +9,7 @@ export default function IsCpf(validationOptions?: ValidationOptions) {
             propertyName: propertyName,
             constraints: [],
             options: validationOptions,
-            validator: {
-                validate(value: any, args: ValidationArguments) {
-                  return new CpfValidator().isValid(value);
-                }
-            }
+            validator: CpfValidator
         });
    };
 }
