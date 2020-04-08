@@ -1,15 +1,15 @@
 import { Validator } from './Validator';
-import { CepFormatter } from '../usekit';
+import { CepFormatter } from '../formatters';
 
 /**
  * The CEP validator.
  */
 class CepValidator implements Validator {
 
-  private cpfFormatter: CepFormatter;
+  private cepFormatter: CepFormatter;
 
   constructor() {
-    this.cpfFormatter = new CepFormatter();
+    this.cepFormatter = new CepFormatter();
   }
 
   /**
@@ -30,7 +30,7 @@ class CepValidator implements Validator {
  * @param value A `string` with CEP numbers. Can be formatted or unformatted.
  */
   isValid(value: string) {
-    return this.cpfFormatter.isFormattable(value);
+    return this.cepFormatter.isFormattable(value);
   }
 }
 

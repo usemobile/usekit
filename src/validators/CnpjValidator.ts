@@ -1,5 +1,5 @@
 import { Validator } from './Validator';
-import { CnpjFormatter } from '../usekit';
+import { CnpjFormatter } from '../formatters';
 import Utils from '../utils';
 
 /**

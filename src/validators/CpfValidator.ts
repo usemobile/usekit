@@ -1,5 +1,5 @@
 import { Validator } from './Validator';
-import { CpfFormatter } from '../usekit';
+import { CpfFormatter } from '../formatters';
 import Utils from '../utils';
 
 /**

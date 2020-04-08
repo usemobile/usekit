@@ -1,5 +1,5 @@
 import test from 'ava';
-import { CpfValidator, CnpjValidator, CepValidator } from '../src/usekit';
+import { CpfValidator, CnpjValidator, CepValidator, InssValidator } from '../src/usekit';
 
 const cpfValidator = new CpfValidator();
 const VALID_FORMATTED_CPF = '419.452.849-27';
@@ -19,6 +19,11 @@ const cepValidator = new CepValidator();
 const VALID_FORMATTED_CEP = '35400-000';
 const VALID_UNFORMATTED_CEP = '35400000';
 const INVALID_FORMAT_CEP = '0000';
+
+const inssValidator = new InssValidator();
+const VALID_FORMATTED_INSS = '11.111.11111/11';
+const VALID_UNFORMATTED_INSS = '111111111111';
+const INVALID_FORMAT_INSS = '0000';
 
 test('should validate an CPF', context => {
   context.true(cpfValidator.isValid(VALID_UNFORMATTED_CPF));
@@ -40,4 +45,10 @@ test('should validate an CEP', context => {
   context.true(cepValidator.isValid(VALID_UNFORMATTED_CEP));
   context.true(cepValidator.isValid(VALID_FORMATTED_CEP));
   context.false(cepValidator.isValid(INVALID_FORMAT_CEP));
+});
+
+test('should validate an INSS', context => {
+  context.true(inssValidator.isValid(VALID_UNFORMATTED_INSS));
+  context.true(inssValidator.isValid(VALID_FORMATTED_INSS));
+  context.false(inssValidator.isValid(INVALID_FORMAT_INSS));
 });
