@@ -8,7 +8,6 @@
     "test": "nyc ava",
     "test:watch": "ava --watch",
     "build": "bili",
-    "prepublishOnly": "yarn test",
     "semantic-release": "HUSKY_SKIP_HOOKS=1 semantic-release"
   },
   "publishConfig": {
