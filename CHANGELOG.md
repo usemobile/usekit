@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/usemobile/usekit/compare/v1.2.0...v1.3.0) (2020-04-08)
+
+
+### Bug Fixes
+
+* removing broken umd compile options ([b5a0733](https://github.com/usemobile/usekit/commit/b5a07337dbd1900025f572551093d756d001e935))
+
+
+### Features
+
+* creating decorators to VOs ([4a28af7](https://github.com/usemobile/usekit/commit/4a28af735b837ff53138d83a8005af0615c80c8c))
+
 # [1.2.0](https://github.com/usemobile/usekit/compare/v1.1.0...v1.2.0) (2020-04-08)
 
 
