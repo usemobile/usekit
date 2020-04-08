@@ -6,9 +6,7 @@ const configuration: Configuration = {
   output: {
     format: [
       'es',
-      'cjs',
-      'umd',
-      'umd-min'
+      'cjs'
     ],
     moduleName: 'Usekit'
   },

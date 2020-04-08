@@ -39,13 +39,9 @@
     }
   },
   "license": "MIT",
-  "cdn": "dist/usekit.umd.js",
   "main": "dist/usekit.js",
   "types": "types/usekit.d.ts",
-  "unpkg": "dist/usekit.umd.js",
   "module": "dist/usekit.esm.js",
-  "jsdelivr": "dist/usekit.umd.js",
-  "umd:main": "dist/usekit.umd.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/usemobile/usekit.git"
