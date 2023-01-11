@@ -79,6 +79,6 @@
   },
   "dependencies": {
     "acorn": "^7.1.1",
-    "class-validator": "^0.11.1"
+    "class-validator": "^0.14.0"
   }
 }
